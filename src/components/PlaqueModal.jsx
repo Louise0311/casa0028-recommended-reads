@@ -1,6 +1,6 @@
 import React from 'react';
 
-function PlaqueModal() {
+function PlaqueModal(props) {
   return (
     <div
       className="fixed inset-0 z-50 grid place-content-center bg-black/50 p-4"
@@ -8,7 +8,15 @@ function PlaqueModal() {
       aria-modal="true"
       aria-labelledby="modalTitle"
     >
-      <div className="w-full max-w-md rounded-lg bg-white p-6 shadow-lg">
+      <div className="relative w-full max-w-md rounded-lg bg-white p-6 shadow-lg">
+
+        <button 
+          onClick={props.onClose} 
+          className="absolute top-2 right-2 text-gray-500 hover:text-black text-xl"
+        >
+          ✕
+        </button>
+
         <h2 id="modalTitle" className="text-xl font-bold text-gray-900 sm:text-2xl">
           Modal Title
         </h2>
