@@ -18,7 +18,7 @@ function App() {
     {isModalOpen ? <PlaqueModal 
                      title="Historical Plaque Found!"
                      description="This plaque commemorates the life of a famous Beijinger."
-                     onClose={handleClose}/> : null}
+                     setIsModalOpen={setIsModalOpen} /> : null}
   </div>
 )
 }
