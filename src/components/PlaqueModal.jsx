@@ -19,8 +19,8 @@ function PlaqueModal(props) {
           ✕
         </button>
 
-        <h2 id={props.title} className="text-xl font-bold text-gray-900 sm:text-2xl">
-          Modal Title
+        <h2 id="modalTitle" className="text-xl font-bold text-gray-900 sm:text-2xl">
+          {props.title} 
         </h2>
 
         <div className="mt-4">
